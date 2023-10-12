@@ -10,6 +10,18 @@ jobs:
   hello_world_job:
     runs-on: ubuntu-20.04
     steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+      - name: Install client dependencies and build
+        working-directory: ./client
+        run: |
+          npm install
+          npm run build
+      - name: Check client style
+        run: cd client && npm run lint
+
       - name: Say hello
         run: |
           echo "Hello World!"
