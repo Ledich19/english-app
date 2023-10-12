@@ -45,6 +45,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
           WITH_V: true
           PRERELEASE: true
+          DEFAULT_BUMP: patch
   a_test_job:
     runs-on: ubuntu-20.04
     steps:
