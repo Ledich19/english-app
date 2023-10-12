@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
       # note that your "main" branch might be called main instead of master
 
 jobs:
@@ -31,3 +34,11 @@ jobs:
       - name: Directory content
         run: |
           ls -l
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Deploy to production
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.MY_RENDER_SERVICE_ID }}
+          api-key: ${{ secrets.MY_RENDER_API_KEY }}
