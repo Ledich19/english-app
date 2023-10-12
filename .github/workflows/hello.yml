@@ -29,9 +29,12 @@ jobs:
   simple_deployment_pipeline:
     runs-on: ubuntu-20.04
     steps:
-      - name: Trigger deployment
+      - name: Trigger deployment client
         if: ${{ github.event_name == 'push' }}
         run: curl https://api.render.com/deploy/srv-${{ secrets.MY_RENDER_SERVICE_ID }}?key=${{ secrets.MY_RENDER_API_KEY }}
+      - name: Trigger deployment server
+        if: ${{ github.event_name == 'push' }}
+        run: curl https://api.render.com/deploy/srv-${{ secrets.MY_RENDER_SERVICE_SRVER_ID }}?key=${{ secrets.MY_RENDER_SRVER_API_KEY }}
   tag_release:
     needs: [simple_deployment_pipeline]
     runs-on: ubuntu-20.04
