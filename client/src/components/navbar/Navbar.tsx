@@ -35,13 +35,15 @@ const Navbar = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Image
-            className={s.image}
-            src="/img/english-language-logo.png"
-            alt="my app logo"
-            width={50}
-            height={30}
-          />
+          <Link href="/">
+            <Image
+              className={s.image}
+              src="/img/english-language-logo.png"
+              alt="my app logo"
+              width={50}
+              height={30}
+            />
+          </Link>
           {/* <Typography
             variant="h6"
             noWrap
@@ -98,13 +100,15 @@ const Navbar = () => {
               ))}
             </Menu>
           </Box>
-          <Image
-            className={s.mobileLogo}
-            src="/img/english-language-logo.png"
-            alt="my app logo"
-            width={50}
-            height={30}
-          />
+          <Link href="/">
+            <Image
+              className={s.mobileLogo}
+              src="/img/english-language-logo.png"
+              alt="my app logo"
+              width={50}
+              height={30}
+            />
+          </Link>
           <Typography
             variant="h5"
             noWrap
@@ -120,9 +124,7 @@ const Navbar = () => {
               color: "inherit",
               textDecoration: "none",
             }}
-          >
-            
-          </Typography>
+          ></Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {navigationData.map((link) => (
               <Link key={link.id} href={link.path}>
