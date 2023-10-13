@@ -5,15 +5,11 @@ import Typography from "@mui/material/Typography";
 
 const Grammar = () => {
   return (
-    <main>
-      <Container>
-        <Box>
-          <Card>
-            <Typography variant="h3">Grammar</Typography>
-          </Card>
-        </Box>
-      </Container>
-    </main>
+    <Box>
+      <Card>
+        <Typography variant="h3">Grammar</Typography>
+      </Card>
+    </Box>
   );
 };
 export default Grammar;

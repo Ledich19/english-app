@@ -5,15 +5,11 @@ import Typography from "@mui/material/Typography";
 
 const Contacts = () => {
   return (
-    <main>
-      <Container>
-        <Box>
-          <Card>
-            <Typography variant="h3">Contacts</Typography>
-          </Card>
-        </Box>
-      </Container>
-    </main>
+    <Box>
+      <Card>
+        <Typography variant="h3">Contacts</Typography>
+      </Card>
+    </Box>
   );
 };
 export default Contacts;

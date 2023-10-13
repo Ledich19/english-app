@@ -5,15 +5,11 @@ import Typography from "@mui/material/Typography";
 
 const Dashboard = () => {
   return (
-    <main>
-      <Container>
-        <Box>
-          <Card>
-            <Typography variant="h3">Dashboard</Typography>
-          </Card>
-        </Box>
-      </Container>
-    </main>
+    <Box>
+      <Card>
+        <Typography variant="h3">Dashboard</Typography>
+      </Card>
+    </Box>
   );
 };
 export default Dashboard;

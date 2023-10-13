@@ -5,15 +5,11 @@ import Typography from "@mui/material/Typography";
 
 const Login = () => {
   return (
-    <main>
-      <Container>
-        <Box>
-          <Card>
-            <Typography variant="h3">Login</Typography>
-          </Card>
-        </Box>
-      </Container>
-    </main>
+    <Box>
+      <Card>
+        <Typography variant="h3">Login</Typography>
+      </Card>
+    </Box>
   );
 };
 export default Login;

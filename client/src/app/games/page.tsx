@@ -1,15 +1,15 @@
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import { Container, Paper } from "@mui/material";
+import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 
-const Loading = () => {
+const Games = () => {
   return (
     <Box>
       <Card>
-        <Typography variant="h3">Loading</Typography>
+        <Typography variant="h3">Games</Typography>
       </Card>
     </Box>
   );
 };
-export default Loading;
+export default Games;

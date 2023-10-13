@@ -5,15 +5,11 @@ import Typography from "@mui/material/Typography";
 
 const About = () => {
   return (
-    <main>
-      <Container>
-        <Box>
-          <Card>
-            <Typography variant="h3">About</Typography>
-          </Card>
-        </Box>
-      </Container>
-    </main>
+    <Box>
+      <Card>
+        <Typography variant="h3">About</Typography>
+      </Card>
+    </Box>
   );
 };
 export default About;

@@ -5,15 +5,11 @@ import Typography from "@mui/material/Typography";
 
 const Footer = () => {
   return (
-    <main>
-      <Container>
-        <Box>
-          <Card>
-            <Typography variant="h3">Footer</Typography>
-          </Card>
-        </Box>
-      </Container>
-    </main>
+    <Box>
+      <Card>
+        <Typography variant="h3">Footer</Typography>
+      </Card>
+    </Box>
   );
 };
 export default Footer;

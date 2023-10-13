@@ -5,15 +5,11 @@ import Typography from "@mui/material/Typography";
 
 const Registration = () => {
   return (
-    <main>
-      <Container>
-        <Box>
-          <Card>
-            <Typography variant="h3">Registration</Typography>
-          </Card>
-        </Box>
-      </Container>
-    </main>
+    <Box>
+      <Card>
+        <Typography variant="h3">Registration</Typography>
+      </Card>
+    </Box>
   );
 };
 export default Registration;
