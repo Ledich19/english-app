@@ -5,7 +5,7 @@ type Exercise = {
   variants: string[] | { key: string; values: string[] }[];
   sentences: {
     sentence: string;
-    tense: string;
+    tense?: string;
   }[];
 };
 
